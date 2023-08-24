@@ -1,0 +1,37 @@
+.projects-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 90px 0 0 0;
+}
+
+.projects-heading {
+    margin: 0 0 50px 0;
+}
+
+.project-display {
+    margin: 50px;
+}
+
+.carousel-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+
+.owl-prev, .owl-next {
+    width: 40px; 
+    height: 40px;
+}
+
+/* centering carousel item */
+.owl-carousel .owl-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+

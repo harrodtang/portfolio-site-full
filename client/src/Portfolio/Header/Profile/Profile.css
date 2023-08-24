@@ -1,0 +1,169 @@
+.profile-container {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    height: 10%;
+    min-height: fit-content;
+    padding: 0 0 70px 0;
+}
+
+.profile-parent {
+    display: flex;
+    align-items: center;
+    color: white;
+}
+
+.profile-details-name {
+    font-size: 24px;
+    font-family: "Poppins SemiBold"
+}
+
+.profile-details-role {
+    display: flex;
+    flex-direction: column;
+    margin: 14px 0 24px 0;
+}
+
+/* h1 element inside elements of the class profile-details-role */
+.profile-details-role h1{
+    font-size: 40px;
+    font-family: "Poppins SemiBold";
+}
+
+.profile-role-description {
+    font-size: 19px;
+    margin: 5px 0 0 0;
+    font-family: "Poppins Light"
+}
+
+.profile-options {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile-options .option-btn {
+    background-color: #FFB703;
+    white-space: nowrap; /* Display text on one line */
+    display: inline-flex;
+    align-items: center;
+    max-width: 100%;
+    padding: 8px 16px;
+    margin: 5px; /* Adjust margin between buttons */
+    overflow: hidden; /* Add this line to hide overflow */
+    text-overflow: ellipsis; /* Add this line to add an ellipsis for overflow */
+}
+
+.profile-options .option-btn:hover {
+  background-color: #fb8500;
+  color: white;
+}
+
+.profile-options .github-btn {
+    margin-left: 20px;
+}
+
+.profile-options .resume-btn {
+    margin-left: 20px;
+}
+
+.profile-picture {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 1px 0 0 white;
+    border-radius: 50%;
+    height: 380px;
+    width: 380px;
+    margin: 0 0 0 100px
+}
+
+.profile-picture-background {
+    height: 92%;
+    width: 92%;
+    background-image: url(../../../assets/Header/grad_photo.jpg);
+    background-size: cover;
+    border-radius: 50%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.profile-picture-background:hover {
+    transform: scale(1.07);
+    transition: 1s ease-out
+}
+
+/* ipad */
+@media screen and (max-width: 1110px) {
+    .profile-picture {
+        margin: 0 0 0 80px;
+    }
+
+    .profile-details-name {
+        font-size: 20px;
+    }
+
+    .profile-details-role .primary-text {
+        font-size: 12px;
+    }
+
+    .profile-options .btn {
+        width: 120px;
+        padding: 11px 0;
+        z-index: 700;
+    }
+}
+
+@media screen and (max-width: 910px) {
+    .profile-picture {
+        height: 320px;
+        width: 320px;
+        margin: 0 0 0 4px;
+    }
+}
+
+@media screen and (max-width: 810px) {
+    .profile-picture {
+        margin: 0 !important
+    }
+
+    .profile-parent {
+        flex-direction: column-reverse;
+        margin: 40px 0 0 0;
+    }
+
+     .profile-options {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap; /* Allow buttons to wrap on smaller screens */
+    }
+
+    .profile-options .option-btn {
+        margin: 5px; /* Adjust margin between buttons */
+    }
+
+    .profile-details {
+        margin: 25px 0 0 
+    }
+
+    .profile-options .highlighted-btn {
+        margin: 0 !important
+    }
+
+    .profile-options, .profile-details-role {
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .profile-picture {
+        height: 275px;
+        width: 275px;
+        margin-top: -90px;
+    }
+
+    .profile-details {
+        width: 90%
+    }
+}

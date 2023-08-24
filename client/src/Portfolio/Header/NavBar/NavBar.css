@@ -1,0 +1,99 @@
+.navbar-container {
+    display: flex;
+    justify-content: center;
+    height: 140px;
+    color: white
+}
+
+.navbar-parent {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+    width: 70%;
+    color: white
+}
+
+.navbar-logo {
+    font-size: 50px;
+    font-family: "Poppins ExtraBold";
+    color: white
+}
+
+.navbar-options {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-option {
+    font-size: 16px;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.navbar-hamburger {
+    color: white;
+    display: none;
+}
+
+.navbar-option-separator {
+    margin: 0 50px 0 0;
+    color: white;
+}
+
+.selected-navbar-option {
+    color: #FFB703
+}
+
+@media only screen and (max-width: 1110px) {
+    .navbar-parent {
+        width: 80%;
+    }
+}
+
+@media only screen and (max-width: 970px) {
+    .navbar-hamburger {
+        display: block
+    }
+
+    .navbar-parent {
+        width: 100%;
+        padding: 0 40px;
+        position: relative;
+    }
+
+    .navbar-options {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        left: -100%;
+        top: 0px;
+        height: 100vh;
+        width: 100%;
+        justify-content: space-around;
+        background-color: #d29640;
+        z-index: 1000;
+        opacity: 0.5;
+        transition: all 0.8s ease-out;
+    }
+
+    .navbar-option-separator {
+        margin: 0;
+    }
+
+    .selected-navbar-option, .navbar-option {
+        color: white;
+    }
+
+    .navbar-hamburger-bars {
+        font-size: 30px;
+        cursor: pointer;
+        margin: 0px 10px;
+        color: white;
+    }
+
+    .show-hamburger-options {
+        left: 0;
+        opacity: 0.9
+    }
+}

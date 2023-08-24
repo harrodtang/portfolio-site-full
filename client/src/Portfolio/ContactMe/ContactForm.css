@@ -1,0 +1,54 @@
+.glass-card {
+    background-color: rgba(255, 255, 255, 0.5); /* Adjusted the alpha value to 0.5 for half transparency */
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+    padding: 20px;
+    width: 50vw;
+    margin: 100px auto;
+    box-shadow: 0 0 10px -2px #1f2235;
+    width: 50%;
+}
+
+.contact-me-container {
+    margin: 70px 0 0 0;
+}
+
+.contact-me-title {
+    margin: 20px 0 0 0;
+    font-family: "Poppins Bold";
+    font-size: 20px;
+    /* color: #FFB703; */
+}
+
+.glass-card .MuiTextField-root {
+    margin-top: 20px;
+}
+
+.glass-card .MuiButton-containedPrimary {
+    background-color: #FFB703; /* Change the background color of the button */
+}
+
+.glass-card .MuiButton-containedPrimary:hover {
+    background-color: #fb8500; /* Change the hover color of the button, optional */
+    color: white;
+}
+
+.glass-card .button-right {
+    display: flex;
+    justify-content: flex-end; /* Aligns the button to the right */
+}
+
+.scroll-to-top-button {
+    position: fixed !important;
+    right: 20px !important;
+    bottom: 20px !important;
+    z-index: 1000 !important; /* ensure the button is above other page content */
+  }
+
+@media only screen and (max-width: 1100px) {
+    .glass-card {
+        width: 75%;
+    }
+}
+  
+  
