@@ -2,7 +2,7 @@
   "name": "portfolio-site",
   "version": "1.0.0",
   "engines": {
-    "node": "18.x",
+    "node": "14.x",
     "npm": "8.x"
   },
   "description": "",
