@@ -47,3 +47,9 @@
     background-color: #FFB703;
     margin-top: -4px;
 }
+
+@media only screen and (max-width: 670px) {
+    .screen-sub-heading {
+        text-align: center;
+    }
+}
