@@ -67,7 +67,7 @@ function Profile() {
 
             <Button
               variant="contained"
-              href="harrod-resume-f2023.pdf"
+              href="harrod-resume.pdf"
               target="_blank"
               rel="noopener noreferrer"
               className="btn option-btn resume-btn"
